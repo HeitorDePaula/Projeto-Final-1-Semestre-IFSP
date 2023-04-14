@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="contato.css">
+    <title>Nexus Group - O aquecimento global</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nexus Group</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="active"><a href=index.html>Início</a></li>
+                <li><a href=sobre.html>Sobre</a></li>
+                <li><a href=causas.html>Causas</a></li>
+                <li><a href=solucoes.html>Soluções</a></li>
+                <li><a href=contato.html>Contato</a></li>
+
+
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+
+    <form action="index.php" method="get">
+        <section id="container-form">
+            <div class="titulo-form">
+                <h1 class="title-form">Formulario de Contato</h1>
+                <h2 class="stitle-form">Questões e Sugestões</h2>
+            </div>
+
+            <div class="input-container">
+                <input type="text" required="" />
+                <label><i style="margin: 1vh;" class="fas fa-user"></i>Nome e Sobrenome</label>
+            </div>
+
+            <div class="input-container">
+                <input type="mail" required="" />
+                <label><i style="margin: 1vh;" class="fas fa-envelope"></i>Email</label>
+            </div>
+
+            <div class="input-container">
+                <input type="tel" required="" />
+                <label><i style="margin: 1vh;" class="fas fa-phone"></i>Telefone</label>
+            </div>
+
+            <div class="desc-form">
+                <p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda quisquam officiis odio
+                    repellendus temporibus placeat eum asperiores! Ratione quo quae, aspernatur asperiores vero quasi
+                    sed ea voluptatibus perspiciatis repellendus.</p>
+                </p>
+            </div>
+
+            <button type="button" class="btn" type="submit"><i style="margin: 0.5vh;"
+                    class="fas fa-paper-plane"></i>Enviar</button>
+
+        </section>
+    </form>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+</body>
+
+</html>

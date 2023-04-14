@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <title>Nexus Group - The global warming</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nexus Group</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="active"><a href=index-eua.html>Home</a></li>
+                <li><a href=sobre-eua.html>About</a></li>
+                <li><a href=causas-eua.html>Causes</a></li>
+                <li><a href=solucoes-eua.html>Solutions</a></li>
+                <li><a href=contato-eua.html>Contact</a></li>
+
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="menu-index">
+
+        <section class="left">
+            <p class="title">GLOBAL WARMING</p>
+            <p class="msg">Global warming is the process of increasing the average temperature of the oceans and
+                atmosphere of the
+                Earth caused by massive greenhouse gas emissions that intensify the greenhouse effect.</p>
+            <a href="sobre-eua.html" class="cta">About</a>
+        </section>
+
+        <section class="right">
+            <img src="./images/img.png" alt="Langing image">
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+</body>
+
+</html>

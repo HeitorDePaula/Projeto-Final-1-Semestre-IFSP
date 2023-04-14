@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <title>Nexus Group - O aquecimento global</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nexus Group</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="active"><a href=index.html>Início</a></li>
+                <li><a href=sobre.html>Sobre</a></li>
+                <li><a href=causas.html>Causas</a></li>
+                <li><a href=solucoes.html>Soluções</a></li>
+                <li><a href=contato.html>Contato</a></li>
+
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="menu-index">
+
+        <section class="left">
+            <p class="title">AQUECIMENTO GLOBAL</p>                                                     
+            <p class="msg">Aquecimento global é o processo de aumento da temperatura média dos oceanos e da atmosfera da Terra causado por massivas emissões de gases que intensificam o efeito estufa.</p>
+            <a href="sobre.html" class="cta">Sobre</a>
+        </section>
+
+        <section class="right">
+            <img src="./images/img.png" alt="Langing image">
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+</body>
+
+</html>
